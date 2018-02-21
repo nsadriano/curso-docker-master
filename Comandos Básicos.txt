@@ -1,0 +1,94 @@
+Comandos básicos
+
+docker container run -d --name mydeb -p <porta_exposta>:<porta_interna> -v <pasta_host>:<pasta_interna> nginx
+
+
+Help
+	docker container --help
+	docker image --help
+	docker network --help
+
+
+O comando run sempre cria um novo container
+	docker container run <imagem_name>
+
+	docker container run debian bash --version
+	
+	O paramentro -it roda o container em modo interativo e abre o terminal do container
+		docker container run -it debian bash
+
+
+		
+Executando Container já existente
+	docker container start -ai <container_name>
+	
+		
+		
+Mostra todos os processos de containers ativos
+	docker container ps
+
+
+Mostra todos os processos de containers independente se esta rodando ou parado
+	docker container ps -a
+	
+
+
+Nomeando um Container (Containers tem nomes únicos)
+	docker container run --name mydeb -it debian bash
+	
+
+
+Mapeando portas em containers
+	docker container run -p <porta_exposta>:<porta_interna> --name mydeb nginx 
+
+
+
+Mapeando volumes
+	docker container run --name mydeb -p <porta_exposta>:<porta_interna> -v <pasta_host>:<pasta_interna> nginx
+
+
+	
+Acessando os Logs 
+	docker container logs <container_name>
+	
+	
+Executando comandos no container
+	docker container exec <container_name> <comandos> 
+	docker container exec mydeb uname -or
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

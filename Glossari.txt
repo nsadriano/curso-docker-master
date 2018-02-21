@@ -1,0 +1,11 @@
+Glossario
+
+Dockerfile (Descritor) => Arquivo com as configurações da imagem
+
+Image => Build do Dockerfile 
+
+Container => Instancia da imagem, objeto
+
+Composer => Orquestrador do Docker
+
+Registry => Local onde ficam armazenadas as imagens. Exemplo: Dockerhub

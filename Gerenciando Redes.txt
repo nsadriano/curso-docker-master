@@ -1,0 +1,40 @@
+Gerenciando Redes
+
+Tipos de rede:
+	None Network
+	Bridge Network (Padrão)
+	Host Network
+	Overlay Network (Swarm mode - Somente em Cluster)
+	
+
+docker network --help
+docker network ls
+
+docker network inspect bridge
+
+
+Rodando container em rede especifica
+	docker container run -d --net bridge debian
+
+
+Criando nova rede
+	docker network create --driver bridge rede_nova
+	
+
+Conectando um Container em outra rede
+		docker network connect bridge <nome_container>
+		
+		
+		
+Desconctando um Container de uma rede
+		docker network disconnect bridge <nome_container>
+		
+		
+		
+
+		
+		
+
+
+
+

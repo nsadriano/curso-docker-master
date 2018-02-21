@@ -1,0 +1,5 @@
+Composer
+
+docker-compose up (Executar dentro do diretorio onde está o arquivo .yml
+
+docker-compose up -d --scale worker=3
